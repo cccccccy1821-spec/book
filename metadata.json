@@ -1,0 +1,8 @@
+{
+  "name": "BookMind",
+  "description": "A book excerpt app with feed, 3D mind map, and bookshelf views, featuring OCR and voice input.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-primary: var(--theme-primary);
+  --color-theme-secondary: var(--theme-secondary);
+  --color-theme-accent: var(--theme-accent);
+  --color-theme-accent-hover: var(--theme-accent-hover);
+  --color-theme-accent-light: var(--theme-accent-light);
+  --color-theme-bg-subtle: var(--theme-bg-subtle);
+  --color-theme-border: var(--theme-border);
+  --color-theme-camera-text: var(--theme-camera-text);
+  --color-theme-bg-light: var(--theme-bg-light);
+}
+
+@layer base {
+  :root {
+    /* Default: Brown & Pink */
+    --theme-primary: #5c4033;
+    --theme-secondary: #8b6b5d;
+    --theme-accent: #c27ba0;
+    --theme-accent-hover: #a66285;
+    --theme-accent-light: #e8b4b8;
+    --theme-bg-subtle: #f4ece6;
+    --theme-bg-light: #fdfbf7;
+    --theme-border: #e8dcc4;
+    --theme-camera-text: #8b5a2b;
+  }
+
+  [data-theme="blue"] {
+    /* Theme 1: Light Blue & Light Gray - Adjusted for contrast */
+    --theme-primary: #2d3748;
+    --theme-secondary: #4a5568;
+    --theme-accent: #3182ce;
+    --theme-accent-hover: #2b6cb0;
+    --theme-accent-light: #ebf8ff;
+    --theme-bg-subtle: #f7fafc;
+    --theme-bg-light: #ffffff;
+    --theme-border: #cbd5e0;
+    --theme-camera-text: #2d3748;
+  }
+
+  [data-theme="purple"] {
+    /* Theme 2: Light Purple & White - Adjusted for contrast */
+    --theme-primary: #322659;
+    --theme-secondary: #553c9a;
+    --theme-accent: #805ad5;
+    --theme-accent-hover: #6b46c1;
+    --theme-accent-light: #faf5ff;
+    --theme-bg-subtle: #ffffff;
+    --theme-bg-light: #fcfaff;
+    --theme-border: #d6bcfa;
+    --theme-camera-text: #322659;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  html[data-font-size="small"] {
+    font-size: 14px;
+  }
+
+  html[data-font-size="large"] {
+    font-size: 18px;
+  }
+}
